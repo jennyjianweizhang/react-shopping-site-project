@@ -1,0 +1,12 @@
+@import '../style/layout/layout.css';
+@import './home/home.css';
+@import './recommended/recommended.css';
+@import './featured/featured.css';
+@import './featureProduct/FeatureProduct.css';
+@import './footer/footer.css';
+@import './shop/Shop.css';
+@import './productDetail/productDetail.css';
+@import './signup/Signup.css';
+@import './signin/Signin.css';
+@import './account/account.css';
+@import './editProfile/editProfile.css';

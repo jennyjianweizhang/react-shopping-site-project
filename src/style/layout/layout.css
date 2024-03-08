@@ -1,0 +1,288 @@
+body {
+  overflow-x: hidden;
+}
+.navbar {
+  width: 100%;
+  height: 10rem;
+  background-color: #f9f9f9 !important;
+  padding: 1.88rem 3.13rem;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+.navbar a.nav-link {
+  color: gray;
+  padding: 0.63rem 1.56rem !important;
+  font-size: 1rem;
+}
+.navbar .activeNavLink {
+  color: #101010;
+}
+.navbar .my-logo-class {
+  width: 10rem;
+}
+.navbar form {
+  margin-left: 2rem;
+}
+.navbar form .input-group {
+  width: 18rem;
+  height: 3rem;
+}
+.navbar form .input-group .input-group-text,
+.navbar form .input-group input {
+  border-radius: 0;
+  background-color: #ffff;
+}
+.navbar form .input-group .input-group-text {
+  border-right: none;
+}
+.navbar form .input-group .input-group-text .fa {
+  color: gray;
+}
+.navbar form .input-group input {
+  font-size: 0.8rem;
+  color: gray;
+  border-left: none;
+}
+.navbar .btn {
+  position: relative;
+  background-color: #f9f9f9;
+  border-radius: 0;
+  border-color: #f9f9f9;
+  color: black;
+}
+.navbar .btn .cart-notification {
+  position: absolute;
+  top: -0.3rem;
+  right: -0.3rem;
+  background-color: red;
+  color: white;
+  font-size: 0.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .sign {
+  margin-left: 6.25rem;
+}
+.navbar .sign .signUp,
+.navbar .sign .signIn {
+  width: 6rem;
+  height: 3rem;
+  border: none;
+  font-size: 0.9rem;
+}
+.navbar .sign .signUp {
+  background-color: #101010;
+  color: #f9f9f9;
+}
+.navbar .sign .signIn {
+  background-color: #f2f2f2;
+  border: 0.06rem solid #e1e1e1;
+  color: #7d7d7d;
+  margin-left: 1.25rem;
+}
+.navbar .cartPage {
+  background-color: #ffff;
+  position: absolute;
+  top: 0.2rem;
+  z-index: 5;
+  right: -40rem;
+  width: 37rem;
+  height: 60rem;
+  padding: 1.6rem 2.6rem 6.25rem;
+  transition: right 0.5s ease-in-out;
+  display: none;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.navbar .cartPage .container {
+  height: 100%;
+  position: relative;
+}
+.navbar .cartPage .container .h2 {
+  font-size: 1.3rem;
+  margin-left: -1rem;
+}
+.navbar .cartPage .container .h4 {
+  font-size: 0.8rem;
+}
+.navbar .cartPage .container .clearBtn {
+  width: 30rem;
+  margin-left: 13.5rem;
+}
+.navbar .cartPage .container .clearBtn .close,
+.navbar .cartPage .container .clearBtn .clear {
+  border: 0.08rem solid #e1e1e1;
+  background-color: #ffff;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+.navbar .cartPage .container .productAdd {
+  width: 33rem;
+  height: 6.5rem;
+  margin-left: -1.3rem;
+  margin-top: 1rem;
+  position: relative;
+  border-radius: 0;
+}
+.navbar .cartPage .container .productAdd .controlBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.navbar .cartPage .container .productAdd .controlBtn .addBtn,
+.navbar .cartPage .container .productAdd .controlBtn .delBtn {
+  width: 2rem;
+  height: 3.19rem;
+  border: 0.08rem solid #e1e1e1;
+  background-color: #ffff;
+}
+.navbar .cartPage .container .productAdd .controlBtn .addBtn span,
+.navbar .cartPage .container .productAdd .controlBtn .delBtn span {
+  color: lightgray;
+}
+.navbar .cartPage .container .productAdd .productImage {
+  margin-top: -2rem;
+  margin-left: 1.3rem;
+}
+.navbar .cartPage .container .productAdd .productName p {
+  width: 8rem;
+  color: #101010;
+  font-size: 1rem;
+  margin-top: -2.7rem;
+  margin-left: 4rem;
+}
+.navbar .cartPage .container .productAdd .quantityBox {
+  margin-left: -8rem;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+.navbar .cartPage .container .productAdd .quantityBox .quantity {
+  color: #8D8D8D;
+}
+.navbar .cartPage .container .productAdd .quantityBox .number {
+  margin-top: -1rem;
+}
+.navbar .cartPage .container .productAdd .sizeBox {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  margin-left: -6rem;
+}
+.navbar .cartPage .container .productAdd .sizeBox .size {
+  margin-bottom: 0rem;
+  color: #8D8D8D;
+}
+.navbar .cartPage .container .productAdd .colorBox {
+  font-size: 0.8rem;
+  margin-top: 1.1rem;
+  margin-left: -5rem;
+  overflow: hidden;
+}
+.navbar .cartPage .container .productAdd .colorBox .color {
+  color: #8D8D8D;
+}
+.navbar .cartPage .container .productAdd .colorBox .colorCircle {
+  margin-top: -1rem;
+}
+.navbar .cartPage .container .productAdd .subTotal {
+  margin-left: -4.5rem;
+  margin-top: -1rem;
+}
+.navbar .cartPage .container .productAdd .delet {
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  border: 0.08rem solid #e1e1e1;
+  background-color: #ffff;
+}
+.navbar .cartPage .container .totalBox {
+  border-top: 0.06rem solid #e1e1e1;
+  margin-top: 7rem;
+  position: absolute;
+  top: 30rem;
+  padding: 1rem;
+}
+.navbar .cartPage .container .totalBox .sub {
+  width: 8rem;
+  margin-top: 1rem;
+}
+.navbar .cartPage .container .totalBox h4 {
+  width: 6rem;
+}
+.navbar .cartPage .container .totalBox .checkOut {
+  margin-top: -4rem;
+  margin-left: 21.3rem;
+  z-index: 10;
+  width: 8rem;
+}
+.navbar .cartPage .container .totalBox .checkOut button {
+  background-color: #101010;
+  color: #f9f9f9;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
+.navbar .cartPageVisible {
+  right: 0;
+  display: block;
+}
+.navbar .userAccount {
+  margin-left: 1rem;
+}
+.navbar .userAccount .user-info {
+  position: relative;
+  cursor: pointer;
+}
+.navbar .userAccount .user-info .profileImg {
+  position: absolute;
+  top: -0.25rem;
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+.navbar .userAccount .user-info .arrow {
+  position: absolute;
+  left: 9rem;
+}
+.navbar .userAccount .user-info .dropdown-menu {
+  position: absolute;
+  top: 2rem;
+  right: -4.5rem;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 0.25rem;
+  display: none;
+}
+.navbar .userAccount .user-info .dropdown-menu.show {
+  display: block;
+}
+.navbar .userAccount .user-info .dropdown-menu .dropdown-item {
+  padding: 0.5rem 1rem;
+}
+.navbar .userAccount .user-info .dropdown-menu .dropdown-item:hover {
+  background-color: #f8f9fa;
+}
+.no-product-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 20px;
+}
+.no-product-found {
+  color: #8D8D8D;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}

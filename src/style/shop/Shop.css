@@ -1,0 +1,55 @@
+.shop .col-md-4 {
+  width: 12rem;
+}
+.shop .col-md-4 .card {
+  height: 15rem;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+}
+.shop .col-md-4 .card .imgBox {
+  background-color: #f9f9f9;
+}
+.shop .col-md-4 .card .imgBox .card-img-top {
+  height: 6.4rem;
+  transition: transform 0.3s ease-in-out;
+}
+.shop .col-md-4 .card .productName {
+  font-size: 0.8rem;
+  text-align: center;
+}
+.shop .col-md-4 .card .card-text {
+  font-size: 0.6rem;
+  text-align: center;
+  color: #b6b6b6;
+}
+.shop .col-md-4 .card .price {
+  color: black;
+  text-align: center;
+  font-style: normal;
+  margin-top: 1.8rem;
+  font-size: 0.8rem;
+}
+.shop .col-md-4 .card .add-to-basket {
+  position: absolute;
+  bottom: -3rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  border: 0;
+  transition: bottom 0.3s ease-in-out;
+}
+.shop .col-md-4 .card:hover .add-to-basket {
+  bottom: 0;
+}
+.shop .col-md-4 .card:hover .card-body {
+  margin-top: 0rem;
+}
+.shop .col-md-4 .card:hover .card-img-top {
+  transform: scale(0.85);
+  height: 5rem;
+}

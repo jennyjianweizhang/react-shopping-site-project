@@ -1,0 +1,64 @@
+.shop{
+    .col-md-4{
+        width: 12rem;
+        .card{
+            height: 15rem;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+            .imgBox{
+                background-color: #f9f9f9;
+                .card-img-top{
+                    height: 6.4rem;
+                    transition: transform 0.3s ease-in-out;
+                    // transition: transform ... targets only changes to the transform property
+                    // transition: all ... targets changes to any and all transitionable properties of the element. 
+                }
+            }
+            .productName{
+                font-size: 0.8rem;
+                text-align: center;
+            }
+            .card-text{
+                font-size: 0.6rem;
+                text-align: center;
+                color: #b6b6b6;
+            }
+            .price{
+                color: black;
+                text-align: center;
+                font-style: normal;
+                margin-top: 1.8rem;
+                font-size: 0.8rem;
+            }
+            .add-to-basket {
+                position: absolute;
+                bottom: -3rem; // Start hidden below the card
+                left: 0;
+                right: 0;
+                text-align: center;
+                background-color:black;
+                color: white;
+                padding: 0.5rem 0;
+                font-size: 0.8rem;
+                border: 0;
+                transition: bottom 0.3s ease-in-out;
+            }
+            &:hover {
+                .add-to-basket {
+                    bottom: 0; 
+                    
+                }
+                // Shrink other elements
+                .card-body {
+                    margin-top: 0rem;
+                }
+                .card-img-top {
+                    transform: scale(0.85); 
+                    height: 5rem;
+                }
+                
+            }
+        }
+    }
+}
